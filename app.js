@@ -6,13 +6,13 @@ const botonReiniciar = document.getElementById('reiniciar');
 
 let numeroSecreto;
 let intentosRestantes;
-const MAX_INTENTOS = 3;
+const MAX_INTENTOS = 5;
 
 function iniciarJuego() {
     numeroSecreto = Math.floor(Math.random() * 10) + 1;
     intentosRestantes = MAX_INTENTOS;
     titulo.textContent = 'Adivina el número';
-    mensaje.textContent = `Tienes ${MAX_INTENTOS} intentos. Ingresa un número entre 1 y 10.`;
+    mensaje.textContent = `Tienes ${MAX_INTENTOS} intentos. Ingresa un número entre 1 y 100.`;
     inputNumero.value = '';
     inputNumero.disabled = false;
     botonIntentar.disabled = false;
@@ -33,7 +33,7 @@ function terminarJuego(resultado) {
 function manejarIntento() {
     const valor = Number(inputNumero.value);
     if (!valor || valor < 1 || valor > 10) {
-        mensaje.textContent = 'Ingresa un número válido entre 1 y 10.';
+        mensaje.textContent = 'Ingresa un número válido entre 1 y 100.';
         return;
     }
 
