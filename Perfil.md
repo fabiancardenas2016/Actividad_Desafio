@@ -10,7 +10,7 @@
 Soy estudiante apasionado por la creación de aplicaciones web, automatización de procesos y aprendizaje continuo.
 
 - 🌎 Medellín, Colombia
-- 📚 Ingeniería de Mecatrónica
+- 📚 estudiante 
 - 💼 Desarrollador Full Stack (en formación)
 - 🎯 Interés en IA y Desarrollo Web
 
